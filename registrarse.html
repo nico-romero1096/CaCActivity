@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse</title>
+    <style>
+        footer{
+            text-align: center;
+        }
+        footer img{
+            width: 20px;
+            height: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header style="background-color: orange;">
+        <nav>
+            <a style="background-color: chocolate;" href="index.html">Home</a>
+            <a style="background-color: chocolate;" href="about.html">Acerca de</a>
+            <a style="background-color: chocolate;" href="contact.html">Contacto</a>
+            <a style="background-color: chocolate;" href="registrarse.html">Registrarse</a>
+            <a style="background-color: chocolate;" href="sucursales.html">Sucursales</a>
+        </nav>
+        <h1 style="text-align: center;">La cocina de Juan</h1>
+    </header>
+    <main>
+        <h2>Formulario de registro</h2>
+        <form action="show_data.html" target="_blank">
+            <label for="firstname">Nombre:</label>
+            <input type="text" name="firstname" id="firstname" placeholder="Ingrese su nombre aqui...">
+            <br>
+            <br>
+            <label for="lastname">Apellido:</label>
+            <input type="text" name="lastname" id="lastname" placeholder="Ingrese su apellido aqui...">
+            <br>
+            <br>
+            <label for="adress">Direccion:</label>
+            <input type="text" name="address" id="address" placeholder="Ingrese su direccion aqui...">
+            <br>
+            <br>
+            <label for="city">Ciudad:</label>
+            <select name="city" id="city">
+                <option value="C.A.B.A.">C.A.B.A.</option>
+                <option value="G.B.A. Sur">G.B.A. Sur</option>
+                <option value="G.B.A. Norte">G.B.A. Norte</option>
+                <option value="G.B.A. Oeste">G.B.A. Oeste</option>
+            </select>
+            <br>
+            <br>
+            <label for="zipcode">Codigo Postal:</label>
+            <input type="text" name="zipcode" id="zipcode" placeholder="Ingrese su codigo postal aqui...">
+            <br>
+            <br>
+            <label for="birthday">Fecha de nacimiento (mm/dd/yyyy):</label>
+            <input type="date" name="birthday" id="birthday">
+            <br>
+            <br>
+            <label for="gender">Genero:</label>
+            <input type="radio" name="gender" value="hombre">Hombre
+            <input type="radio" name="gender" value="mujer">Mujer
+            <input type="radio" name="gender" value="otro">Otro
+            <br>
+            <br>
+            <p>Estudios:
+                <input type="checkbox" name="estudio" value="primarios">Primarios
+                <input type="checkbox" name="estudio" value="Secundarios">Secundarios
+                <input type="checkbox" name="estudio" value="Terciarios">Terciarios
+                <input type="checkbox" name="estudio" value="Universitarios">Universitarios
+                <input type="checkbox" name="estudio" value="otro">Otro
+            </p>
+            <br>
+            <br>
+            <input type="submit" value="Enviar">
+        </form>
+    </main>
+    <footer style="background-color: orange;">
+        <br>
+        <a href="wwww.twitter.com" target="_blank"><img src="img/twitter.png" alt=""></a>
+        <a href="www.facebook.com" target="_blank"><img src="img/facebook.png" alt=""></a>
+        <a href="www.pinterest.com" target="_blank"><img src="img/pinterest.png" alt=""></a>
+        <a href="www.instagram.com" target="_blank"><img src="img/instagram.png" alt=""></a>
+        <a href="https://ar.linkedin.com/" target="_blank"><img src="img/linkedin.png" alt=""></a>
+        <p style="text-align:center;"><b>Derechos reservados @2020</b></p>
+        <br>
+    </footer>
+</body>
+</html>
