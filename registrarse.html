@@ -4,42 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registrarse</title>
-    <style>
-        footer{
-            text-align: center;
-        }
-        footer img{
-            width: 20px;
-            height: 20px;
-        }
-    </style>
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-    <header style="background-color: orange;">
+    <header>
         <nav>
-            <a style="background-color: chocolate;" href="index.html">Home</a>
-            <a style="background-color: chocolate;" href="about.html">Acerca de</a>
-            <a style="background-color: chocolate;" href="contact.html">Contacto</a>
-            <a style="background-color: chocolate;" href="registrarse.html">Registrarse</a>
-            <a style="background-color: chocolate;" href="sucursales.html">Sucursales</a>
+            <a class="nav" href="index.html">Home</a>
+            <a class="nav" href="about.html">Acerca de</a>
+            <a class="nav" href="contact.html">Contacto</a>
+            <a class="nav" href="registrarse.html">Registrarse</a>
+            <a class="nav" href="sucursales.html">Sucursales</a>
         </nav>
-        <h1 style="text-align: center;">La cocina de Juan</h1>
+        <h1 class="center">La cocina de Juan</h1>
     </header>
     <main>
         <h2>Formulario de registro</h2>
         <form action="show_data.html" target="_blank">
             <label for="firstname">Nombre:</label>
             <input type="text" name="firstname" id="firstname" placeholder="Ingrese su nombre aqui...">
-            <br>
-            <br>
             <label for="lastname">Apellido:</label>
             <input type="text" name="lastname" id="lastname" placeholder="Ingrese su apellido aqui...">
-            <br>
-            <br>
-            <label for="adress">Direccion:</label>
-            <input type="text" name="address" id="address" placeholder="Ingrese su direccion aqui...">
-            <br>
-            <br>
+            <p>Direccion:</p>
+            <label for="street"></label>
+            <input type="text" name="street" id="street" placeholder="Ingrese su calle aqui...">
+            <label for="number">Numero:</label>
+            <input type="text" name="number" id="number" placeholder="Ingrese el numero aqui...">
             <label for="city">Ciudad:</label>
             <select name="city" id="city">
                 <option value="C.A.B.A.">C.A.B.A.</option>
@@ -47,43 +36,59 @@
                 <option value="G.B.A. Norte">G.B.A. Norte</option>
                 <option value="G.B.A. Oeste">G.B.A. Oeste</option>
             </select>
-            <br>
-            <br>
             <label for="zipcode">Codigo Postal:</label>
             <input type="text" name="zipcode" id="zipcode" placeholder="Ingrese su codigo postal aqui...">
             <br>
             <br>
-            <label for="birthday">Fecha de nacimiento (mm/dd/yyyy):</label>
+            <label for="tel">Telefono:</label>
+            <input type="text" name="tel" id="tel" placeholder="Ingrese su num telefonico aqui...">
+            <label for="birthday">Fecha Nac:</label>
             <input type="date" name="birthday" id="birthday">
+            <label for="mail">Email:</label>
+            <input type="email" name="mail" id="mail">
+            <label for="password">Clave:</label>
+            <input type="password" name="password" id="password">
+            <label for="tp">Link de tp3:</label>
+            <input type="text" name="tp" id="tp">
             <br>
             <br>
-            <label for="gender">Genero:</label>
+            <label for="gender">Genero (radio):</label>
             <input type="radio" name="gender" value="hombre">Hombre
             <input type="radio" name="gender" value="mujer">Mujer
             <input type="radio" name="gender" value="otro">Otro
-            <br>
-            <br>
-            <p>Estudios:
-                <input type="checkbox" name="estudio" value="primarios">Primarios
-                <input type="checkbox" name="estudio" value="Secundarios">Secundarios
-                <input type="checkbox" name="estudio" value="Terciarios">Terciarios
-                <input type="checkbox" name="estudio" value="Universitarios">Universitarios
-                <input type="checkbox" name="estudio" value="otro">Otro
+            <p>Conocimientos previos (checkbox):
+                <input type="checkbox" name="technology" value="html">HTML
+                <input type="checkbox" name="technology" value="css">CSS
+                <input type="checkbox" name="technology" value="bootstrap">Bootstrap
+                <input type="checkbox" name="technology" value="javascript">Javascript
+                <input type="checkbox" name="technology" value="typestript">Typescript
+                <input type="checkbox" name="technology" value="angular">Angular
+                <input type="checkbox" name="technology" value="base-de-datos">Base de Datos
+                <input type="checkbox" name="technology" value="python">Python
+                <input type="checkbox" name="technology" value="django">Django
             </p>
-            <br>
+            <p>Estudios(select):
+                <select name="study" id="study">
+                    <option value="primaria">Primaria</option>
+                    <option value="secundaria">Secundaria</option>
+                    <option value="terciario">Terciario</option>
+                    <option value="universitario">universitario</option>
+                </select>
+            </p>
+            <textarea name="comment" id="comment" cols="30" rows="4" placeholder="comentario..."></textarea>
             <br>
             <input type="submit" value="Enviar">
+            <br>
+            <br>
         </form>
     </main>
-    <footer style="background-color: orange;">
-        <br>
-        <a href="wwww.twitter.com" target="_blank"><img src="img/twitter.png" alt=""></a>
-        <a href="www.facebook.com" target="_blank"><img src="img/facebook.png" alt=""></a>
-        <a href="www.pinterest.com" target="_blank"><img src="img/pinterest.png" alt=""></a>
-        <a href="www.instagram.com" target="_blank"><img src="img/instagram.png" alt=""></a>
-        <a href="https://ar.linkedin.com/" target="_blank"><img src="img/linkedin.png" alt=""></a>
-        <p style="text-align:center;"><b>Derechos reservados @2020</b></p>
-        <br>
+    <footer>
+        <a class="redsoc" href="wwww.twitter.com" target="_blank"><img src="img/twitter.png" alt=""></a>
+        <a class="redsoc" href="www.facebook.com" target="_blank"><img src="img/facebook.png" alt=""></a>
+        <a class="redsoc" href="www.pinterest.com" target="_blank"><img src="img/pinterest.png" alt=""></a>
+        <a class="redsoc" href="www.instagram.com" target="_blank"><img src="img/instagram.png" alt=""></a>
+        <a class="redsoc" href="https://ar.linkedin.com/" target="_blank"><img src="img/linkedin.png" alt=""></a>
+        <p id="derechos">Derechos reservados @2020</p>
     </footer>
 </body>
 </html>

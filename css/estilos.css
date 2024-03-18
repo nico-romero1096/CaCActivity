@@ -1,0 +1,54 @@
+*{
+    font-family: verdana;
+
+}
+
+
+h1 {
+    text-align: center;
+}
+
+header{
+    background-color: black;
+    color: white;
+    width: 100%;
+    left: 0;
+}
+
+.nav {
+    background-color: grey;
+    color: white;
+    border-radius: 5px;
+    padding: 3px;
+    margin: 4px;
+    text-decoration: none;
+}
+
+.nav:hover{
+    background-color: #CBCECF;
+    color: black;
+}
+
+nav {
+    padding-top: 10px;
+}
+
+footer{
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.redsoc img {
+    width: 20px;
+    height: 20px;
+    padding-top: 10px;
+}
+
+#derechos{
+    margin-top: 20px;
+}
